@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>dom</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            #main{
+                width: 100px;
+                height: 50px;
+                margin: 0 auto;
+                font-size: 44px;
+                letter-spacing: 5px;
+                background-color: cadetblue;
+            }
+        </style>
+        <script>
+            function RandomCode() {
+                var chars = ['a','b','c','1','2','3'];
+                var ran = "";
+                for(var i = 0;i < 3;i++){
+                    var randPos = Math.floor(Math.random()*(chars.length - 1));
+                    ran += chars[randPos];
+                }
+                document.getElementById('main').innerHTML = ran;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="main"></div>
+        <button onclick="RandomCode()">随机码</button>
+    </body>
+</html>

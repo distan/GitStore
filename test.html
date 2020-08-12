@@ -29,12 +29,33 @@
            border: 1px solid orange;
        }
     </style>
+    <script>
+        var a = 15;
+        var b = "15";
+        var num = a+b;
+        document.write(num);
+        console.log("a = " + a);
+        a = prompt("请输入：");
+        console.log(a);
+        // var ul = document.getElementById("mylist");
+        // console.log(ul);
+    </script>
     </head>
     <body>
         <div id="nav">
             <a href="#">链接1</a>
             <a href="#">链接2</a>
-            <a href="#">链接3</a>
+            <a href="#" onclick="alert('jjjjjsssss')">链接3</a>
         </div>
+        <ul id="mylist">
+            <li id = "m1">1</li>
+            <li id = "m2">3</li>
+            <li id = "m3">2</li>
+        </ul>
+        <script>
+            var ul = document.getElementById('mylist');
+            var list = ul.getElementsByTagName('li');
+            console.log(list);
+        </script>
     </body>
 </html>
