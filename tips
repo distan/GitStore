@@ -1,5 +1,8 @@
-上下班异常人员是否影响部门平均上下班时间
-上下班异常人员是否影响个人平均上下班时间
-上下班迟到早退人员是否影响部门平均上下班时间
-上下班迟到早退人员是否影响个人平均上下班时间
-考勤名单人员校验采用员工编号进行
+git branch               查看本地分支 -a 查看所有分支 -r 查看远程分支
+git branch test          创建test分支
+git checkout test        切换至test分支
+git branch -d test       删除test分支(当前不在该分支下才能删除)
+git add ****             添加****文件
+git commit -m 'GitStore' 提交并加注释GitStore
+git pull origin master   从Github获取master分支内容
+git push origin master   将文件推至Github服务器的mster分支上去
