@@ -3,6 +3,8 @@ git branch test          创建test分支
 git checkout test        切换至test分支
 git branch -d test       删除test分支(当前不在该分支下才能删除)
 git add ****             添加****文件
-git commit -m 'GitStore' 提交并加注释GitStore
-git pull origin master   从Github获取master分支内容
-git push origin master   将文件推至Github服务器的mster分支上去
+git commit -m '备注'      提交并加注释备注
+git pull origin test     从Github获取test分支内容
+git push origin test     将文件推至Github服务器的test分支上去
+必须保证同分支才能够push文件，因此必须现在本地创建同名分支
+如果push时Github没有该分支则会新创建
