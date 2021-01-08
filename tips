@@ -3,15 +3,18 @@ git branch test          创建test分支
 git checkout test        切换至test分支
 git branch -d test       删除test分支(当前不在该分支下才能删除)
 git add ****             添加****文件
+git add .
 git commit -m '备注'      提交并加注释备注
 git pull origin test     从Github获取test分支内容
 git push origin test     将文件推至Github服务器的test分支上去
 必须保证同分支才能够push文件，因此必须现在本地创建同名分支
 如果push时Github没有该分支则会新创建
 
-****切换分支后打开文件的内容是本分支的内容**
+****切换分支后打开文件的内容是本分支的内容****
+****在本地进行的远程分支处理必须要经过push操作才能在github上显示****
 
 
 git merge test              将test分支下的内容更新至当前分支（会覆盖当前分支同名文件的内容）
 git branch -d test          删除本地test分支
 git branch -r origin/test   删除远程origin/test分支（但此时github的test分支并未被删除）
+git push origin :test       (注意空格不能少)删除完远程分支后执行该步骤，可删除github上的test分支
