@@ -8,3 +8,6 @@ git pull origin test     从Github获取test分支内容
 git push origin test     将文件推至Github服务器的test分支上去
 必须保证同分支才能够push文件，因此必须现在本地创建同名分支
 如果push时Github没有该分支则会新创建
+
+****切换分支后打开文件的内容是本分支的内容**
+
